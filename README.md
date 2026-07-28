@@ -1087,29 +1087,26 @@ Widget buildPhoto(String? photoPath) {
 
 ### Planned Screenshots:
 
-1. **Onboarding Screen**
+1. **Onboarding Screen - Home Dashboard**
 ![Onboarding Screen Screenshot](docs/screenshots/kit-tailleur.png)
-   - Workshop name + phone setup
+   - Workshop name, Client count, orders in progress, revenue stats
 
-2. **Home Dashboard**
-   - Client count, orders in progress, revenue stats
-
-3. **Client List**
+2. **Client List**
    - Search bar, client cards with photos
 
-4. **Client Detail**
+3. **Client Detail**
    - Measurements table, order history
 
-5. **Add Order Screen**
+4. **Add Order Screen**
    - Client selection, fabric photos, price input
 
-6. **Order List**
+5. **Order List**
    - Status filters (En Attente, En Cours, Prêt)
 
-7. **Payment Tracking**
+6. **Payment Tracking**
    - Partial payment visualization, balance remaining
 
-8. **Catalog Screen**
+7. **Catalog Screen**
    - Garment model gallery with prices
 
 ---
@@ -1135,31 +1132,6 @@ This project was developed in partnership with **Openlab International** (Niger)
 
 ---
 
-## 🛠️ Development Setup
-
-> **Note:** For portfolio purposes, detailed setup instructions available on request.
-
-**Key dependencies (pubspec.yaml highlights):**
-- `isar: ^3.1.0` + `isar_flutter_libs`
-- `firebase_core`, `cloud_firestore`
-- `image_picker`, `flutter_image_compress`
-- `connectivity_plus`, `path_provider`
-- `intl` (FCFA formatting, French dates)
-
-**Build commands:**
-```bash
-# Generate Isar schemas
-flutter pub run build_runner build
-
-# Run on Android
-flutter run
-
-# Build APK (for tablet pre-installation)
-flutter build apk --release
-```
-
----
-
 ## 📄 License
 
 **Proprietary Software**  
@@ -1175,11 +1147,12 @@ Documentation in this repository: MIT License
 
 - **Developer:** Gabaki Borise Balode - BGB
 - **Email:** gborisebalode@gmail.com
-- **LinkedIn:** [linkedin.com/in/g-borise-balode-bgb](https://linkedin.com/in/g-borise-balode-bgb)
+- **LinkedIn:** [linkedin.com/in/gabakibalodebgb](https://linkedin.com/in/gabakibalodebgb)
 - **Portfolio:** [bgb-portfolio.vercel.app](https://bgb-portfolio.vercel.app)
 
 **Business Partnership:**
 - **Openlab International** (Niger)
+- **Facebook:** [facebook.com/OpenLabInternational](https://www.facebook.com/OpenLabInternational)
 - Focus: Tailor onboarding, kit distribution, training
 
 ---
