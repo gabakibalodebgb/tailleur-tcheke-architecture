@@ -2,12 +2,7 @@
 
 > Offline-first mobile solution empowering West African tailors to digitize their workshops
 
-![Platform Status](https://img.shields.io/badge/status-MVP%20tested-success)
-![Tailors Testing](https://img.shields.io/badge/tailors%20testing-5-orange)
-![Market](https://img.shields.io/badge/market-Niger-blue)
-![Flutter](https://img.shields.io/badge/flutter-3.3%2B-blue)
-![Isar](https://img.shields.io/badge/isar-3.1.0-green)
-![Firebase](https://img.shields.io/badge/firebase-integrated-orange)
+![Platform Status](https://img.shields.io/badge/status-MVP%20tested-success) ![Testers](https://img.shields.io/badge/user%20testers-5-orange) ![Market](https://img.shields.io/badge/market-Benin-blue) ![Flutter](https://img.shields.io/badge/flutter-3.3%2B-blue) ![Isar](https://img.shields.io/badge/isar-3.1.0-green) ![Firebase](https://img.shields.io/badge/firebase-integrated-orange)
 
 ---
 
@@ -36,6 +31,7 @@ This is a **technical showcase repository** demonstrating the architecture and d
 - [Cloud Sync Strategy](#cloud-sync-strategy)
 - [Technical Challenges](#technical-challenges)
 - [Business Model](#business-model)
+- [Metrics & Impact](#metrics--impact)
 - [Roadmap](#roadmap)
 - [Screenshots](#screenshots)
 
@@ -47,13 +43,15 @@ This is a **technical showcase repository** demonstrating the architecture and d
 
 The app works **100% offline** by default, syncing to the cloud only when internet is available and the tailor has a Premium subscription.
 
+This is an independently developed, self-initiated project, built to explore digital tools for West African artisans.
+
 ### Quick Stats
 
 | Metric | Value |
-|--------|-------|
-| **Status** | MVP tested with real tailors |
-| **Tailors Testing** | ~5 artisans (Niger) |
-| **Target Market** | Niger (expanding to West Africa) |
+|---|---|
+| **Status** | MVP tested |
+| **User Testers** | ~5 proxy testers (friends/relatives, Benin), simulating tailor workflows |
+| **Target Market** | Benin (expanding to West Africa) |
 | **Offline Capability** | 100% functional without internet |
 | **Development Period** | January 2026 - Present |
 | **Platform** | Android tablets (iOS support ready) |
@@ -77,14 +75,14 @@ West African tailors face critical business management issues:
 
 A **hardware + software kit** designed for African artisan realities:
 
-✅ **100% offline-first** - Works without internet (sync when available)  
-✅ **Tablet included** - Pre-configured Android tablet in hardware kit  
-✅ **Simple interface** - Tailored for low digital literacy  
-✅ **Complete client records** - Photos, measurements, order history  
-✅ **Visual catalog** - Browse fabric/model photos with clients  
-✅ **Payment tracking** - Installments, debts, receipts (FCFA currency)  
-✅ **Cloud backup** - Premium users sync to Firebase (automatic recovery)  
-✅ **Camera integration** - Capture fabric photos, client references  
+✅ **100% offline-first** - Works without internet (sync when available)
+✅ **Tablet included** - Pre-configured Android tablet in hardware kit
+✅ **Simple interface** - Tailored for low digital literacy
+✅ **Complete client records** - Photos, measurements, order history
+✅ **Visual catalog** - Browse fabric/model photos with clients
+✅ **Payment tracking** - Installments, debts, receipts (FCFA currency)
+✅ **Cloud backup** - Premium users sync to Firebase (automatic recovery)
+✅ **Camera integration** - Capture fabric photos, client references
 
 ---
 
@@ -199,13 +197,13 @@ A **hardware + software kit** designed for African artisan realities:
   - Name, phone, gender, city
   - Photo (optional, camera capture)
   - Custom notes (preferences, special requests)
-  
+
 - ✅ **Comprehensive measurements** (23 fields)
   - **Upper body:** Shoulders, chest, waist, neck, sleeve length, arm circumference, back width
   - **Lower body:** Belt, hips, thigh, pant length, inseam, knee, ankle
   - **Garment-specific:** Boubou length, dress length
   - **Custom field:** Free-text for special measurements
-  
+
 - ✅ **Measurement history**
   - Last measurement date tracked
   - Update measurements over time (weight changes)
@@ -221,10 +219,10 @@ A **hardware + software kit** designed for African artisan realities:
   - Photo of garment style (upload from gallery/camera)
   - Model name, category (men, women, unisex)
   - Base price per model
-  
+
 - ✅ **Favorites**
   - Mark popular models (quick access)
-  
+
 - ✅ **Categories**
   - Organize by garment type (shirt, pants, boubou, dress, etc.)
 
@@ -239,18 +237,18 @@ A **hardware + software kit** designed for African artisan realities:
   3. Add fabric details (description, photos of fabric)
   4. Set total price
   5. Set delivery date
-  
+
 - ✅ **Order statuses**
   - **En Attente** (Pending) - Just placed
   - **En Cours** (In Progress) - Tailor is sewing
   - **Prêt** (Ready) - Finished, awaiting pickup
   - **Livré** (Delivered) - Client picked up
   - **Annulé** (Cancelled) - Order cancelled
-  
+
 - ✅ **Status-based filtering**
   - View only "In Progress" orders (today's work queue)
   - See all "Ready" orders (pending pickups)
-  
+
 - ✅ **Fabric photo gallery**
   - Attach multiple photos per order (fabric texture, color, pattern)
   - View photos during sewing (reference)
@@ -260,16 +258,16 @@ A **hardware + software kit** designed for African artisan realities:
 #### **Payment Tracking**
 - ✅ **Linked to orders**
   - Each payment tied to specific order
-  
+
 - ✅ **Partial payments supported**
   - Client pays deposit (e.g., 10,000 FCFA of 25,000 FCFA total)
   - Track remaining balance per order
-  
+
 - ✅ **Payment methods**
   - Cash (Espèces)
-  - Mobile Money (Orange Money, Moov Money)
+  - Mobile Money (MTN, Moov)
   - Bank Transfer
-  
+
 - ✅ **Payment history**
   - Date, amount, method recorded
   - View all payments for an order
@@ -283,7 +281,7 @@ A **hardware + software kit** designed for African artisan realities:
   - Total clients registered
   - Orders in progress (work queue)
   - Total revenue (FCFA) - all-time or filtered by period
-  
+
 - ✅ **Quick actions**
   - Add new client
   - Create new order
@@ -297,11 +295,11 @@ A **hardware + software kit** designed for African artisan realities:
 - ✅ **Automatic backup** when connected
   - All clients, orders, payments synced to Firestore
   - Photos uploaded to Firebase Cloud Storage (compressed)
-  
+
 - ✅ **Account recovery**
   - If tablet breaks/stolen, tailor can restore full account
   - Enter phone number → downloads all data from cloud
-  
+
 - ✅ **Sync status indicator**
   - Visual icon showing "Synced" vs "Pending sync"
   - Last sync timestamp displayed
@@ -310,7 +308,7 @@ A **hardware + software kit** designed for African artisan realities:
 - ✅ **Subscription validation**
   - `isPremium` flag in Tailor model
   - `subscriptionEndDate` checked before sync
-  
+
 - ✅ **Grace period** (planned)
   - 7 days after expiration before cloud access revoked
   - Reminders to renew
@@ -322,6 +320,7 @@ A **hardware + software kit** designed for African artisan realities:
 ### Core Entities (Isar Collections)
 
 #### **1. Tailleur (Tailor Profile)**
+
 ```dart
 @collection
 class Tailleur {
@@ -350,6 +349,7 @@ class Tailleur {
 ---
 
 #### **2. Client (Customer)**
+
 ```dart
 @collection
 class Client {
@@ -379,6 +379,7 @@ class Client {
 ```
 
 **Mesures (Embedded Object in Client):**
+
 ```dart
 @embedded
 class Mesures {
@@ -419,6 +420,7 @@ class Mesures {
 ---
 
 #### **3. Catalogue (Garment Models)**
+
 ```dart
 @collection
 class Catalogue {
@@ -441,6 +443,7 @@ class Catalogue {
 ---
 
 #### **4. Commande (Order)**
+
 ```dart
 @collection
 class Commande {
@@ -478,6 +481,7 @@ class Commande {
 ---
 
 #### **5. Paiement (Payment)**
+
 ```dart
 @collection
 class Paiement {
@@ -568,6 +572,7 @@ Future<void> createAtelier(String nom, String telephone) async {
 #### **3. Daily Operations (100% Offline)**
 
 **Adding a client:**
+
 ```dart
 // services/client_service.dart (simplified)
 Future<void> addClient(Client client) async {
@@ -581,6 +586,7 @@ Future<void> addClient(Client client) async {
 ```
 
 **Creating an order:**
+
 ```dart
 // services/commande_service.dart (simplified)
 Future<void> createCommande(Commande commande) async {
@@ -604,6 +610,7 @@ Future<void> createCommande(Commande commande) async {
 #### **4. Cloud Sync (When Internet Available + Premium)**
 
 **Sync trigger:**
+
 ```dart
 // screens/settings_screen.dart
 if (isPremium && hasInternet) {
@@ -616,6 +623,7 @@ onPressed: () async {
 ```
 
 **Sync flow (simplified):**
+
 ```dart
 // services/sync_service.dart
 Future<void> syncAll() async {
@@ -723,6 +731,7 @@ Future<bool> restoreAccount(String telephone) async {
 ```
 
 **Download implementation:**
+
 ```dart
 Future<void> _restoreClients(String uidTailleur) async {
   final snapshot = await FirebaseFirestore.instance
@@ -757,10 +766,11 @@ Future<void> _restoreClients(String uidTailleur) async {
 
 ### Challenge 1: Relationship Management in Isar (NoSQL)
 
-**Problem:**  
+**Problem:**
 Isar is NoSQL (no SQL joins). How to link Orders → Clients efficiently?
 
 **Naive approach (slow):**
+
 ```dart
 // For each order, fetch client separately (N+1 queries)
 for (var commande in commandes) {
@@ -769,6 +779,7 @@ for (var commande in commandes) {
 ```
 
 **Optimized solution (IsarLink):**
+
 ```dart
 // Define relationship in model
 class Commande {
@@ -797,7 +808,7 @@ for (var commande in commandes) {
 
 ### Challenge 2: Image Storage Strategy
 
-**Problem:**  
+**Problem:**
 Fabric photos can be 5-10 MB each. Storing 100 photos = 500 MB local storage + expensive cloud sync.
 
 **Solution: Aggressive Compression**
@@ -830,7 +841,7 @@ Future<String> compressAndSave(File imageFile) async {
 
 ### Challenge 3: Sync Conflict Resolution
 
-**Problem:**  
+**Problem:**
 Tailor modifies Client A offline. Before syncing, they restore account from cloud (old version of Client A). Which version wins?
 
 **Current strategy: Last Write Wins (Tablet Priority)**
@@ -859,7 +870,7 @@ if (client.lastUpdated.isAfter(cloudClient.lastUpdated)) {
 
 ### Challenge 4: Offline Photo Display
 
-**Problem:**  
+**Problem:**
 Photos stored as file paths (`/storage/emulated/0/photos/client123.jpg`). How to display in Flutter widgets?
 
 **Solution: File Provider**
@@ -896,7 +907,7 @@ Widget buildPhoto(String? photoPath) {
   - Spec target: 2GB RAM, 32GB storage, Android 10+
   - App pre-installed (no app store needed)
   - Protective case (workshop durability)
-  
+
 - ✅ **Lifetime free version** (offline-only)
   - Unlimited clients, orders, payments
   - No cloud sync
@@ -923,19 +934,19 @@ Widget buildPhoto(String? photoPath) {
 
 ---
 
-### Revenue Model (Openlab International)
+### Projected Revenue Model
 
 **Kit sales:**
-- Target: 100 kits/year (Niger market)
+- Target: 100 kits/year (Benin market)
 - Revenue: 100 × 50,000 = 5,000,000 FCFA/year
 
 **Subscriptions:**
 - Conversion rate: 30% of free users upgrade (conservative)
 - 30 Premium users × 5,000 = 150,000 FCFA/year (recurring)
 
-**Total Year 1:** ~5,150,000 FCFA (~$8,500)
+**Total Year 1 (projected):** ~5,150,000 FCFA (~$8,500)
 
-**Scalability:** Expand to Benin, Burkina Faso, Mali (10,000+ tailors potential market).
+**Scalability:** Expand to Niger, Burkina Faso, Mali (10,000+ tailors potential market).
 
 ---
 
@@ -943,18 +954,22 @@ Widget buildPhoto(String? photoPath) {
 
 ### Current Status (MVP Testing)
 
-**User Testing:**
+**User Testing Methodology:**
+Due to limited initial access to professional tailors, early testing was conducted with ~5 proxy testers (friends and relatives, Benin), who simulated real tailor workflows (client management, orders, measurements, payments) over a 2-3 month period. This approach validated the core UX and data model before approaching real artisans.
+
 | Metric | Value |
-|--------|-------|
-| **Tailors testing** | ~5 artisans (Niger) |
+|---|---|
+| **Proxy testers** | ~5 (Benin) |
 | **Test duration** | 2-3 months (since May 2026) |
-| **Clients registered** | ~150 (across 5 tailors) |
-| **Orders created** | ~80 |
+| **Simulated clients registered** | ~150 |
+| **Simulated orders created** | ~80 |
 | **Feedback sessions** | 3 (iterative improvements) |
 
 ---
 
-### Tailor Feedback (Real Quotes)
+### Tester Feedback (Simulated Tailor Workflows)
+
+Testers were asked to role-play as tailors, using the app as if managing a real workshop. Quotes reflect their genuine reactions while simulating this profile:
 
 **Positive:**
 - 💬 *"Before, I lost client measurements on paper. Now everything is safe."*
@@ -965,6 +980,8 @@ Widget buildPhoto(String? photoPath) {
 - 💬 *"Add SMS reminders for delivery dates"* (roadmap item)
 - 💬 *"Need receipt printing"* (Bluetooth printer integration planned)
 - 💬 *"Tablet screen too bright at night"* (dark mode added in v1.1)
+
+**Note:** Real-world validation with professional tailors is the next step (see Roadmap).
 
 ---
 
@@ -991,24 +1008,23 @@ Widget buildPhoto(String? photoPath) {
 ### Impact Projection (Post-Launch)
 
 **Time savings:**
-- ⏱️ **50% reduction** in client lookup time
+- ⏱️ **50% reduction** in client lookup time (projected)
   - Before: Search paper notebook (5-10 min)
   - After: Type name, instant results (10 seconds)
 
 **Revenue recovery:**
-- 💰 **20-30% increase** in debt collection
+- 💰 **20-30% increase** in debt collection (projected)
   - Tailors often forget outstanding payments
   - App shows pending payments prominently
 
 **Customer satisfaction:**
-- 📸 **Visual confirmation** reduces errors
+- 📸 **Visual confirmation** reduces errors (projected)
   - Client sees fabric photo before pickup
   - Fewer "this isn't what I ordered" disputes
 
 **Business growth:**
-- 📈 **Professional image** attracts customers
+- 📈 **Professional image** attracts customers (projected)
   - Tablet usage signals modernity, organization
-  - Anecdotal: Tailors report 10-15% more walk-ins
 
 ---
 
@@ -1016,8 +1032,9 @@ Widget buildPhoto(String? photoPath) {
 
 ### Short-Term (Next 3 Months)
 
-- [ ] **Large-scale tailor testing**
-  - Target: 20-30 tailors (Niger)
+- [ ] **Real-world tailor testing**
+  - Transition from proxy testers to professional tailors
+  - Target: 20-30 real tailors (Benin)
   - Finalize tablet model (bulk purchase)
   - Training program (2-hour workshop per tailor)
 
@@ -1030,7 +1047,7 @@ Widget buildPhoto(String? photoPath) {
   - PDF receipt generation (email/WhatsApp share)
 
 - [ ] **Dark mode**
-  - Already added (tailor request)
+  - Already added (tester request)
   - Reduce eye strain in low-light workshops
 
 ---
@@ -1043,8 +1060,8 @@ Widget buildPhoto(String? photoPath) {
 
 - [ ] **Multi-language support**
   - French (current)
-  - Hausa (Niger's main language)
-  - Yoruba, Dioula (West Africa expansion)
+  - Fon, Yoruba (Benin's main local languages)
+  - Further West African languages as market expands
 
 - [ ] **Expense tracking**
   - Record fabric purchases, thread costs
@@ -1063,7 +1080,7 @@ Widget buildPhoto(String? photoPath) {
 ### Long-Term (12+ Months)
 
 - [ ] **West Africa expansion**
-  - Benin, Burkina Faso, Mali, Senegal
+  - Niger, Burkina Faso, Mali, Senegal
   - Localized marketing (radio ads, tailor associations)
 
 - [ ] **AI-powered features**
@@ -1083,7 +1100,7 @@ Widget buildPhoto(String? photoPath) {
 
 ## 📸 Screenshots
 
-> **Note:** Screenshots coming soon (app UI in French, anonymized tailor data).
+> **Note:** Screenshots coming soon (app UI in French, anonymized test data).
 
 ### Planned Screenshots:
 
@@ -1111,31 +1128,33 @@ Widget buildPhoto(String? photoPath) {
 
 ---
 
-## 🤝 Collaboration
+## 🤝 Project History
 
-This project was developed in partnership with **Openlab International** (Niger):
+This is an independent, self-initiated project, built to explore digital tools for West African artisans. Early-stage testing was conducted with proxy users (friends and relatives) simulating tailor workflows, rather than with professional tailors directly — a deliberate choice to validate the core product before formal field testing.
 
-**Openlab International:**
-- ✅ Original concept & market research
-- ✅ Tailor network (testing, feedback)
-- ✅ Business development (kit sales, training)
-- ✅ Hardware procurement (tablet sourcing)
-
-**My Role (BGB - Propose Group):**
-- ✅ Complete app architecture & design
-- ✅ Solo Flutter development (100% code)
+**My role covered the entire scope:**
+- ✅ Original concept & product design
+- ✅ Complete app architecture & development (100% solo, Flutter)
 - ✅ Isar database schema design
 - ✅ Firebase integration (sync logic, conflict resolution)
-- ✅ User testing coordination (technical support)
-
-**Joint ownership:** Project belongs to both organizations (strategic partnership).
+- ✅ User testing coordination and iteration
 
 ---
 
-## 📄 License
+## 📄 Technical Documentation
 
-**Proprietary Software**  
-The production codebase is proprietary to Openlab International and Propose Group. This repository contains architectural documentation and technical explanations for portfolio purposes only.
+Detailed documentation available in `/docs`:
+- Offline architecture guide
+- Data model & relationships
+- Firebase sync strategy
+- Deployment notes
+
+---
+
+## 🛡️ License
+
+**Proprietary Software**
+The production codebase is proprietary, independently owned. This repository contains architectural documentation and technical explanations for portfolio purposes only.
 
 Documentation in this repository: MIT License
 
@@ -1143,17 +1162,10 @@ Documentation in this repository: MIT License
 
 ## 📧 Contact
 
-**For technical discussions or collaboration inquiries:**
-
 - **Developer:** Gabaki Borise Balode - BGB
 - **Email:** gborisebalode@gmail.com
 - **LinkedIn:** [linkedin.com/in/gabakibalodebgb](https://linkedin.com/in/gabakibalodebgb)
 - **Portfolio:** [bgb-portfolio.vercel.app](https://bgb-portfolio.vercel.app)
-
-**Business Partnership:**
-- **Openlab International** (Niger)
-- **Facebook:** [facebook.com/OpenLabInternational](https://www.facebook.com/OpenLabInternational)
-- Focus: Tailor onboarding, kit distribution, training
 
 ---
 
@@ -1161,14 +1173,13 @@ Documentation in this repository: MIT License
 
 Built to empower West African artisans with modern tools that respect their offline realities. Special thanks to:
 
-- **Openlab International** for vision and market access
-- **5 pioneer tailors** (Niger) for invaluable feedback
+- **5 proxy testers** (Benin) for their time and honest feedback while simulating tailor workflows
 - **Flutter & Isar communities** for excellent offline-first tools
 
 ---
 
-**⚠️ Disclaimer:**  
-Screenshots and tailor feedback shown are based on real MVP testing but anonymized to protect user privacy. No actual client data is exposed in this repository.
+**⚠️ Disclaimer:**
+Screenshots and tester feedback shown are based on real MVP testing (with proxy testers simulating tailor workflows) but anonymized to protect privacy. No actual client data is exposed in this repository.
 
 ---
 
@@ -1207,4 +1218,4 @@ Screenshots and tailor feedback shown are based on real MVP testing but anonymiz
 
 ---
 
-**Built with precision for artisan empowerment. 🇳🇪**
+**Built with precision for artisan empowerment. 🇧🇯**
